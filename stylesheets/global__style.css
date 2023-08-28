@@ -1,4 +1,57 @@
-.bg-container img{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.bg-container img {
   z-index: -1;
   width: 100%;
+}
+.card {
+  width: 18rem;
+}
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+}
+footer h3 {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3.04px;
+  text-transform: uppercase;  
+}
+footer a {
+  color: #BABABA;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+/* Add this CSS rule in your stylesheet or in a <style> tag in your HTML */
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
 }
