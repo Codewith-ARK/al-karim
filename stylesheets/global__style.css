@@ -25,6 +25,13 @@ body {
 .card {
   width: 18rem;
 }
+.card p {
+  font-size: 0.85rem;
+}
+#all-courses a {
+  text-decoration: none;
+  color: unset;
+}
 footer {
   background: rgba(0, 0, 0, 0.9);
   margin: 0;
