@@ -84,6 +84,15 @@ const courseData = [
     detailPage: "",
   },
   {
+    id: "fsd",
+    title: "Full Stack Development",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, ex.",
+    skills: [],
+    duration: 10,
+    imgUrl: "https://placehold.co/240x190",
+    detailPage: "",
+  },
+  {
     id: "wd",
     title: "Wordpress Development",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, ex.",

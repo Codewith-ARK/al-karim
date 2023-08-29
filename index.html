@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="stylesheets/global__style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+    <nav class="navbar navbar-expand-md bg-body-tertiary bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="assets/brand-logo.svg" alt="brand logo"/>
@@ -50,8 +50,9 @@
     <main>
       <div id="hero">
         <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
-            <h1>AL-Karim Institute</h1>
-            <p>Quality learning at an <span class="highlight">affordable</span> price.</p>
+            <!-- <h1>AL-Karim Institute</h1> -->
+            <h1>Quality learning at an <span class="highlight">affordable</span> price.</h1>
+            <!-- <p>Quality learning at an <span class="highlight">affordable</span> price.</p> -->
           </div>
       </div>
       <div class="container py-4 d-flex flex-column">
@@ -114,12 +115,12 @@
       </div>
     </main>
 
-    <footer class="row m-0 py-5">
+    <footer class="row m-0 pt-5">
       <div class="col-md-4 d-flex justify-content-start align-items-center">
         <img class="img-fluid" src="assets/brand-logo-(dark).svg" alt="brand logo">
       </div>
       
-      <div class="col-md-4 ">
+      <div class="col-md-4 mt-3">
         <h3>Important Links</h3>
         <a href="index.html">
           <p>Home</p>
@@ -133,25 +134,31 @@
       </div>
       
       <!-- Column 3 - On larger screens, it takes up 4 out of 12 columns -->
-      <div class="col-md-4">
+      <div class="col-md-4 mt-3">
         <h3>Courses</h3>
-        <a href="#">
+        <a href="pages/course_details/course-detail.html?id=seo">
           <p>Search Engine Optimization</p>
         </a>
-        <a href="#">
+        <a href="pages/course_details/course-detail.html?id=fed">
           <p>Front-End Development</p>
         </a>
-        <a href="#">
+        <a href="pages/course_details/course-detail.html?id=bed">
           <p>Back-end Development</p>
         </a>
-        <a href="#">
+        <a href="pages/course_details/course-detail.html?id=fsd">
           <p>Full-Stack Development</p>
         </a>
-        <a href="#">
+        <a href="pages/course_details/course-detail.html?id=wd">
           <p>Wordpress Development</p>
         </a>
       </div>
+
+      <div class="border-top border-light border-opacity-25 row m-0 p-3">
+        <div class="text-white col-12 col-lg-6 text-center text-md-start">&copy; 2023 AL-Karim Institute</div>
+        <div class="col-12 col-lg-6"></div>
+      </div>
     </footer>
+    
     <script src="scripts/index.js"></script>
   </body>
 </html>
