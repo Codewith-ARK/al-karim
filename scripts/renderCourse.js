@@ -74,7 +74,7 @@ function setContent(element, content) {
       break;
 
     case "course-syllabus":
-      renderSyllabus(content);
+      func(content);
     default:
       // if (typeof content === "string") {
       if (document.getElementById(element)) {
