@@ -1,1 +1,1 @@
-renderCourse();
+renderCourseCards();
