@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 nav a {
   color: #000;
   font-family: Poppins;
@@ -15,39 +16,73 @@ nav a {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 body {
   font-family: "Poppins", sans-serif;
 }
-.bg-container img {
-  z-index: -1;
-  width: 100%;
+
+#hero {
+  height: 550px;
+  background-color: #ffffff;
+  /* opacity: 0.3; */
+  background: radial-gradient(circle,
+      transparent 20%,
+      #ffffff 20%,
+      #ffffff 80%,
+      transparent 80%,
+      transparent),
+    radial-gradient(circle,
+      transparent 20%,
+      #ffffff 20%,
+      #ffffff 80%,
+      transparent 80%,
+      transparent) 25px 25px,
+    linear-gradient(rgba(186, 186, 186, 0.3) 2px, transparent 2px) 0 -1px,
+    linear-gradient(90deg, rgba(186, 186, 186, 0.3) 2px, #ffffff 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
+
+#hero h1 {
+  font-size: 4.5rem;
+  text-shadow: 3px 3px 0px #ff005f;
+}
+
+.highlight {
+  color: #ff005f;
+  font-weight: 700;
+}
+
 .card {
   width: 18rem;
 }
+
 .card p {
   font-size: 0.85rem;
 }
+
 #all-courses a {
   text-decoration: none;
   color: unset;
 }
+
 footer {
   background: rgba(0, 0, 0, 0.9);
   margin: 0;
 }
+
 footer h3 {
-  color: #FFF;
+  color: #fff;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 3.04px;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
+
 footer a {
-  color: #BABABA;
+  color: #bababa;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -57,6 +92,7 @@ footer a {
   text-decoration: none;
   transition: color 0.3s;
 }
+
 /* Add this CSS rule in your stylesheet or in a <style> tag in your HTML */
 @media (max-width: 576px) {
   .card {
