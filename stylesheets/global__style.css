@@ -25,18 +25,23 @@ body {
   height: 550px;
   background-color: #ffffff;
   /* opacity: 0.3; */
-  background: radial-gradient(circle,
+  background: radial-gradient(
+      circle,
       transparent 20%,
       #ffffff 20%,
       #ffffff 80%,
       transparent 80%,
-      transparent),
-    radial-gradient(circle,
-      transparent 20%,
-      #ffffff 20%,
-      #ffffff 80%,
-      transparent 80%,
-      transparent) 25px 25px,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #ffffff 20%,
+        #ffffff 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px,
     linear-gradient(rgba(186, 186, 186, 0.3) 2px, transparent 2px) 0 -1px,
     linear-gradient(90deg, rgba(186, 186, 186, 0.3) 2px, #ffffff 2px) -1px 0;
   background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
@@ -55,6 +60,14 @@ body {
 .card {
   width: 18rem;
 }
+.card-text {
+  max-height: 3.6em; /* Adjust this value based on your font size and line height */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add this property to display the ellipsis */
+  white-space: normal; /* Use "normal" to allow text to wrap within the specified height */
+  line-height: 1.2em; /* Adjust this value to match your line height */
+}
+
 
 .card p {
   font-size: 0.85rem;

@@ -4,6 +4,8 @@ function renderCourseCards() {
   });
 }
 function createCourseCard(obj) {
+const truncatedText = obj.desc.length > 95 ? obj.desc.substring(0, 95 - 3) + "..." : obj.desc;
+
   let html = `
   <a href="course_details/course-detail.html?id=${obj.id}">
     <div class="card">
@@ -11,7 +13,7 @@ function createCourseCard(obj) {
     <div class="card-body">
       <h5 class="card-title">${obj.title}</h5>
       <p class="card-text">
-        ${obj.desc}
+        ${truncatedText}
       </p>
     </div>
     </div>
