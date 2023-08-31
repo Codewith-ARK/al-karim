@@ -1,3 +1,16 @@
+// Assuming you have an object that maps content element IDs to data properties
+const contentMapping = {
+  "course-title": "title",
+  "course-desc": "desc",
+  "course-fee": "fee",
+  "course-skills": "skills",
+  "course-duration": "duration",
+  "course-mode": "mode",
+  "course-classes-timing": "timing",
+  "course-topics": "topics",
+  "course-syllabus": "syllabus",
+};
+
 // Function to render course details
 function renderCourseDetail() {
   // Get the course ID from the URL parameter
@@ -8,17 +21,11 @@ function renderCourseDetail() {
   const course = courseData.find((course) => course.id === courseId);
 
   if (course) {
-    // Populate the page elements with course data
-    setContent("course-title", course.title);
-    setContent("course-desc", course.desc);
-    setContent("course-fee", course.fee);
-    setContent("course-skills", course.skills);
-    setContent("course-duration", course.duration);
-    setContent("course-mode", course.mode);
-    setContent("course-classes-timing", course.timing);
-    setContent("course-topics", course.topics);
-    setContent("course-syllabus", course.syllabus);
-    // Populate other elements as needed
+    // Iterate over the contentMapping object and set content for each element
+    for (const elementId in contentMapping) {
+      const dataProperty = contentMapping[elementId];
+      setContent(elementId, course[dataProperty]);
+    }
   }
 }
 
