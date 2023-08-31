@@ -60,7 +60,15 @@ body {
   color: #212529;
   font-weight: 700;
 }
-
+.custom-btn {
+  color: #fff;
+  background-color: #ff005ddc;  
+}
+.custom-btn:hover {
+  background-color: #ff005f;  
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
 .card {
   width: 18rem;
 }
@@ -77,7 +85,12 @@ body {
   text-decoration: none;
   color: unset;
 }
-
+#login-page, #signup-page {
+  height: 550px;
+}
+form {
+  max-width: 18rem;
+}
 footer {
   background: rgba(0, 0, 0, 0.9);
   margin: 0;
