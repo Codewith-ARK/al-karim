@@ -17,6 +17,10 @@ nav a {
   text-transform: uppercase;
 }
 
+nav .active {
+  color: #ff005f !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -66,10 +70,6 @@ body {
   text-overflow: ellipsis; /* Add this property to display the ellipsis */
   white-space: normal; /* Use "normal" to allow text to wrap within the specified height */
   line-height: 1.2em; /* Adjust this value to match your line height */
-}
-
-
-.card p {
   font-size: 0.85rem;
 }
 
