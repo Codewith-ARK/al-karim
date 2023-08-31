@@ -411,7 +411,6 @@ const courseData = [
     imgUrl: "https://placehold.co/240x190",
     detailPage: "",
   },
-
   {
     id: "fwd",
     title: "Front-end Web Development",
@@ -507,7 +506,6 @@ const courseData = [
     imgUrl: "https://placehold.co/240x190",
     detailPage: "",
   },
-
   {
     id: "bed",
     title: "Back-end Web Development",
