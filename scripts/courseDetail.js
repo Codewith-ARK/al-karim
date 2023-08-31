@@ -1,30 +1,3 @@
-function renderCourseCards() {
-  courseData.map((course) => {
-    createCourseCard(course);
-  });
-}
-function createCourseCard(obj) {
-const truncatedText = obj.desc.length > 95 ? obj.desc.substring(0, 95 - 3) + "..." : obj.desc;
-
-  let html = `
-  <a href="course_details/course-detail.html?id=${obj.id}">
-    <div class="card">
-    <img class="card-img-top" src="${obj.imgUrl}" alt="Card image cap" />
-    <div class="card-body">
-      <h5 class="card-title">${obj.title}</h5>
-      <p class="card-text">
-        ${truncatedText}
-      </p>
-    </div>
-    </div>
-  </a>
-  `;
-
-  if (document.querySelector("#all-courses")) {
-    document.querySelector("#all-courses").innerHTML += html;
-  }
-}
-
 // Function to render course details
 function renderCourseDetail() {
   // Get the course ID from the URL parameter
@@ -46,14 +19,44 @@ function renderCourseDetail() {
     setContent("course-topics", course.topics);
     setContent("course-syllabus", course.syllabus);
     // Populate other elements as needed
-  } else {
-    // Handle the case when the course is not found
-    // For example, display an error message or redirect to a 404 page
   }
 }
 
-// Call the render function when the page loads
-window.onload = renderCourseDetail;
+function renderSyllabus(syllabusData) {
+  // Get the container element where you want to append the syllabus
+  const container = document.getElementById("syllabus");
+  // Iterate through the syllabusData and create elements
+  for (const heading in syllabusData) {
+    // Create an h6 element for the heading
+    const headingElement = document.createElement("h6");
+    headingElement.textContent = heading;
+
+    // Create an unordered list element for sub-topics
+    const subTopicList = document.createElement("ul");
+
+    // Iterate through sub-topics under the heading
+    for (const subTopic in syllabusData[heading]) {
+      // Create a list item element for each sub-topic
+      const listItem = document.createElement("li");
+
+      // Create an anchor element for the sub-topic
+      const anchor = document.createElement("a");
+      anchor.textContent = subTopic;
+      anchor.href = syllabusData[heading][subTopic];
+      anchor.target = "_blank"; // Open the link in a new tab
+
+      // Append the anchor to the list item
+      listItem.appendChild(anchor);
+
+      // Append the list item to the sub-topic list
+      subTopicList.appendChild(listItem);
+    }
+
+    // Append the heading and sub-topic list to the container
+    container.appendChild(headingElement);
+    container.appendChild(subTopicList);
+  }
+}
 
 function setContent(element, content) {
   switch (element) {
@@ -76,16 +79,18 @@ function setContent(element, content) {
       break;
 
     case "course-syllabus":
-      func(content);
+      renderSyllabus(content);
     default:
-      // if (typeof content === "string") {
       if (document.getElementById(element)) {
         document.getElementById(element).textContent = content;
       }
-      // }
       break;
   }
 }
+
+// Call the render function when the page loads
+window.onload = renderCourseDetail;
+
 // course-title
 // course-desc
 // course-skills
