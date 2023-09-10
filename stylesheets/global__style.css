@@ -125,3 +125,13 @@ footer a {
     width: 100%;
   }
 }
+
+/* Define the size and position of the div */
+.div-with-background {
+  width: 100%; /* Adjust the width and height to your preference */
+  height: 230px;
+  background-image: url('../assets/patterns/cit-pattern.png'); /* Replace 'your-image-url.jpg' with your actual image URL */
+  background-size: 165%; /* Scale the background image up by 10% */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+}
