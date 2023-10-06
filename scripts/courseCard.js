@@ -1,20 +1,20 @@
-// function to render the card from the courseData.
+// function to render the card from the courseData & courseInfo.
 function renderCourseCards() {
-  courseData.map((course) => {
-    createCourseCard(course);
-  });
+  for(let i=0; i<courseData.length; i++){
+    createCourseCard(courseData[i], cardInfo[i]);
+  }
 }
 
 // function to render the card onto the canvas.
-function createCourseCard(obj) {
-const truncatedText = obj.desc.length > 95 ? obj.desc.substring(0, 95 - 3) + "..." : obj.desc;
+function createCourseCard(courseInfo, cardInfo) {
+const truncatedText = courseInfo.desc.length > 95 ? courseInfo.desc.substring(0, 95 - 3) + "..." : courseInfo.desc;
 
   let html = `
-  <a href="course_details/course-detail.html?id=${obj.id}">
-    <div class="card">
-    <img class="card-img-top" src="${obj.imgUrl}" alt="Card image cap" />
+  <a href="course_details/course-detail.html?id=${courseInfo.id}">
+    <div class="card overflow-hidden">
+    <div class="card-img w-100" style="background-image: url('${cardInfo.imgUrl}'); background-color: ${cardInfo.color}"></div>
     <div class="card-body">
-      <h5 class="card-title">${obj.title}</h5>
+      <h5 class="card-title">${courseInfo.title}</h5>
       <p class="card-text">
         ${truncatedText}
       </p>

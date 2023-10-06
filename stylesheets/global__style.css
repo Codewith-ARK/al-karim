@@ -127,7 +127,6 @@ footer a {
   height: 220px;
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent image repetition */
-  background-color: var(--purple);
   background-size: 240%;
   object-fit: cover;
 }
@@ -141,6 +140,12 @@ footer a {
   font-size: 0.85rem;
 }
 
+#course-detail-header {
+  background-size: 180%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 /* Add this CSS rule in your stylesheet or in a <style> tag in your HTML */
 @media (max-width: 480px) {
   #hero h1 {
@@ -151,5 +156,8 @@ footer a {
   }
   .card-img {
     height: 250px;
+  }
+  #course-detail-header {
+    background-size: 200%;
   }
 }

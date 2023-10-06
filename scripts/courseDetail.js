@@ -95,8 +95,13 @@ function setContent(element, content) {
   }
 }
 
+function start(){
+  renderCourseDetail();
+  renderCourseBanner();
+}
+
 // Call the render function when the page loads
-window.onload = renderCourseDetail;
+window.onload = start;
 
 // course-title
 // course-desc
