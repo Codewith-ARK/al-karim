@@ -120,9 +120,12 @@ footer a {
 }
 
 /* Add this CSS rule in your stylesheet or in a <style> tag in your HTML */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .card {
     width: 100%;
+  }
+  #hero h1 {
+    font-size: 4.2rem;
   }
 }
 
