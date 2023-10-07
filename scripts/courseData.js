@@ -234,7 +234,7 @@ const courseData = [
   },
   {
     id: "wdf",
-    title: "Web Development Fundamentals",
+    title: "Web Development 101",
     desc: "Unlock the world of web development in this comprehensive course. Learn HTML, CSS, JavaScript, and more to build modern, responsive websites. Whether you're a beginner or want to enhance your skills, this course offers hands-on training to create your web projects.",
     fee: 2000,
     skills: [
@@ -248,7 +248,7 @@ const courseData = [
     ],
     duration: 12,
     mode: "On-Site",
-    timing: ["Sat", "Sun"],
+    timing: ["Sun"],
     topics: [
       "Introduction to Web Development",
       "HTML Fundamentals",
@@ -264,77 +264,29 @@ const courseData = [
       "Recap and Next Steps",
     ],
     syllabus: {
-      "Week 1: Introduction to Web Development": {
-        "Overview of the Web Development Landscape": "https://iamark.tech",
-        "Role of Web Developers": "https://iamark.tech",
-        "Basics of Front-end and Back-end Development": "https://iamark.tech",
+      "Module 0: Understanding the Basics": {
+        "Introduction to the Internet & HTML (.pdf)": "https://drive.google.com/file/d/1DFOcdiJDcwZkqqEQN7bfKdZWNqAcQEd3/view?usp=sharing",
+        "How does the Internet Work? (video)":"https://www.youtube.com/watch?v=7_LPdttKXPc",
+        "How websites work? (video)":"https://www.youtube.com/watch?v=2rsI05vBsD4&ab_channel=DigitalGarage",
+        "Practice Set 1.1":"https://drive.google.com/file/d/10h_jtf-cIVt88gvAMLw4aKQs8qqN7fV_/view?usp=sharing",
       },
-      "Week 2: HTML Fundamentals": {
-        "Introduction to HTML5": "https://iamark.tech",
-        "Creating Web Pages with HTML": "https://iamark.tech",
-        "Document Structure and Semantic Elements": "https://iamark.tech",
-        "HTML Forms and Input Elements": "https://iamark.tech",
+      "Week 1: Basics of HTML": {
+        "Understanding HTML & Its Tags (.pdf)": "https://drive.google.com/file/d/1iCtGx7clLnM9X12MF1tQHoyckgeNIYod/view?usp=sharing",
+        "HTML Tutorial (external link)":"https://www.w3schools.com/html/",
+        "HTML Tutorial for Beginners (video)":"https://www.youtube.com/watch?v=HcOc7P5BMi4",
       },
-      "Week 3: CSS Fundamentals": {
-        "Introduction to CSS3": "https://iamark.tech",
-        "Styling HTML Elements with CSS": "https://iamark.tech",
-        "CSS Selectors and Properties": "https://iamark.tech",
-        "CSS Layout and Positioning": "https://iamark.tech",
+      "Week 2: Intermediate HTML ": {
+        "Semantic HTML & HTML Attributes (.pdf)": "https://drive.google.com/file/d/1PV_ClCVwJ7e7jHbSUkMs-lcDTQlgURSK/view?usp=sharing",
+        "HTML Semantic Elements (external link)": "https://www.w3schools.com/html/html5_semantic_elements.asp",
+        "HTML Attributes Tutorial (external link)":"https://www.w3schools.com/html/html_attributes.asp",
+        "List of HTML Attributes (external link)":"https://www.w3schools.com/tags/ref_attributes.asp",
       },
-      "Week 4: Responsive Web Design": {
-        "Understanding Responsive Design": "https://iamark.tech",
-        "CSS Media Queries": "https://iamark.tech",
-        "Mobile-First Design Approach": "https://iamark.tech",
-        "Testing and Debugging for Different Screen Sizes":
-          "https://iamark.tech",
+      "Week 3: Hosting": {
+        "What is Hosting? (video)":"https://www.youtube.com/watch?v=htbY9-yggB0",
       },
-      "Week 5: JavaScript Basics": {
-        "Introduction to JavaScript": "https://iamark.tech",
-        "Variables, Data Types, and Operators": "https://iamark.tech",
-        "Control Structures (if statements, loops)": "https://iamark.tech",
-        "Functions and Event Handling": "https://iamark.tech",
-      },
-      "Week 6: Document Object Model (DOM)": {
-        "What is the DOM?": "https://iamark.tech",
-        "Accessing and Modifying DOM Elements": "https://iamark.tech",
-        "Event Handling with JavaScript": "https://iamark.tech",
-        "Dynamic Web Page Manipulation": "https://iamark.tech",
-      },
-      "Week 7: Web Design Principles": {
-        "Color Theory and Typography": "https://iamark.tech",
-        "Layout Design and User Experience (UX)": "https://iamark.tech",
-        "User Interface (UI) Design Best Practices": "https://iamark.tech",
-        "Introduction to Wireframing and Mockups": "https://iamark.tech",
-      },
-      "Week 8: Web Development Tools and Version Control": {
-        "Overview of Web Development Tools (e.g., text editors, code editors)":
-          "https://iamark.tech",
-        "Introduction to Version Control with Git": "https://iamark.tech",
-        "Using GitHub for Collaboration and Version Control":
-          "https://iamark.tech",
-      },
-      "Week 9: Web Hosting and Deployment": {
-        "Web Hosting Options": "https://iamark.tech",
-        "Domain Registration": "https://iamark.tech",
-        "Deploying a Website to a Hosting Server": "https://iamark.tech",
-        "Basic Server Management": "https://iamark.tech",
-      },
-      "Week 10: Web Development Project": {
-        "Final Project Overview": "https://iamark.tech",
-        "Brainstorming and Planning": "https://iamark.tech",
-        "Development and Testing": "https://iamark.tech",
-        "Presentation and Review": "https://iamark.tech",
-      },
-      "Week 11: Final Project Presentations": {
-        "Each student presents their web development project to the class.":
-          "https://iamark.tech",
-        "Peer feedback and evaluation.": "https://iamark.tech",
-      },
-      "Week 12: Recap and Next Steps": {
-        "Review of Course Topics": "https://iamark.tech",
-        "Discussion of Further Learning Paths (e.g., Back-end Development, Frameworks)":
-          "https://iamark.tech",
-        "Career Opportunities in Web Development": "https://iamark.tech",
+      "Week 4: CSS": {
+        "CSS Tutorial (external link)":"https://www.w3schools.com/css/",
+        "List of all CSS tags (external link)":"https://www.w3schools.com/cssref/index.php",
       },
     },
     imgUrl: "https://placehold.co/240x190",
