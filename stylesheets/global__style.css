@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+:root {
+  --dark-pink: #f23079;
+  --orange: #f23d30;
+  --purple: #8430f2;
+  --green: #30f267;
+  --cyan: #30dcf2;
+  --yellow: #f2c830;
+  --magenta: #f230bb;
+  --blue: #3037f2;
+  --white: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -62,30 +74,20 @@ body {
 }
 .custom-btn {
   color: #fff;
-  background-color: #ff005ddc;  
+  background-color: #ff005ddc;
 }
 .custom-btn:hover {
-  background-color: #ff005f;  
+  background-color: #ff005f;
   color: #fff;
   transition: 0.3s ease-in-out;
 }
-.card {
-  width: 18rem;
-}
-.card-text {
-  max-height: 3.6em; /* Adjust this value based on your font size and line height */
-  overflow: hidden;
-  text-overflow: ellipsis; /* Add this property to display the ellipsis */
-  white-space: normal; /* Use "normal" to allow text to wrap within the specified height */
-  line-height: 1.2em; /* Adjust this value to match your line height */
-  font-size: 0.85rem;
-}
 
-#all-courses a {
+#all-courses a, .course-card, .course-card:hover {
   text-decoration: none;
   color: unset;
 }
-#login-page, #signup-page {
+#login-page,
+#signup-page {
   height: 550px;
 }
 form {
@@ -118,10 +120,43 @@ footer a {
   text-decoration: none;
   transition: color 0.3s;
 }
+.card {
+  width: 18rem;
+}
+.card-img {
+  height: 220px;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-size: 25%;
+}
+
+.card-text {
+  max-height: 3.6em; /* Adjust this value based on your font size and line height */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add this property to display the ellipsis */
+  white-space: normal; /* Use "normal" to allow text to wrap within the specified height */
+  line-height: 1.2em; /* Adjust this value to match your line height */
+  font-size: 0.85rem;
+}
+
+#course-detail-header {
+  background-size: 180%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 
 /* Add this CSS rule in your stylesheet or in a <style> tag in your HTML */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 4.2rem;
+  }
   .card {
     width: 100%;
+  }
+  .card-img {
+    height: 250px;
+  }
+  #course-detail-header {
+    background-size: 200%;
   }
 }
