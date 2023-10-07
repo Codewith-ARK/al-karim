@@ -12,7 +12,7 @@ const truncatedText = courseInfo.desc.length > 95 ? courseInfo.desc.substring(0,
   let html = `
   <a href="course_details/course-detail.html?id=${courseInfo.id}">
     <div class="card overflow-hidden">
-    <div class="card-img w-100" style="background-image: url('${cardInfo.imgUrl}'); background-color: ${cardInfo.color}"></div>
+    <div class="card-img w-100" style="background-image: url('${cardInfo.icon}'); background-color: ${cardInfo.color}"></div>
     <div class="card-body">
       <h5 class="card-title">${courseInfo.title}</h5>
       <p class="card-text">

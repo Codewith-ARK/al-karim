@@ -82,7 +82,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-#all-courses a {
+#all-courses a, .course-card, .course-card:hover {
   text-decoration: none;
   color: unset;
 }
@@ -127,8 +127,7 @@ footer a {
   height: 220px;
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent image repetition */
-  background-size: 240%;
-  object-fit: cover;
+  background-size: 25%;
 }
 
 .card-text {
