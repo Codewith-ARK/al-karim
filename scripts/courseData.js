@@ -287,6 +287,8 @@ const courseData = [
       "Week 4: CSS": {
         "CSS Tutorial (external link)":"https://www.w3schools.com/css/",
         "List of all CSS tags (external link)":"https://www.w3schools.com/cssref/index.php",
+        "Practice Set 2.1 (.pdf)":"https://drive.google.com/file/d/1ygig3w1zQpA1LXOT5pcaSjcL7RFSWpbz/view?usp=sharing",
+        "Practice Set 2.1 (boilerplate html code)":"https://drive.google.com/file/d/1fxu8-1u3tXvqxMp3Zmpa21ZDKasAhpAr/view?usp=sharing",
       },
     },
     imgUrl: "https://placehold.co/240x190",
