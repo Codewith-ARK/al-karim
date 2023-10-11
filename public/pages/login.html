@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign-up - AL-Karim Institute of freelancing</title>
+  <title>Sign-in - AL-Karim Institute of freelancing</title>
   <link rel="shortcut icon" href="../assets/brand-logo.svg" type="image/x-icon">
 
   <!-- Include Bootstrap 5 CSS -->
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="../stylesheets/global__style.css" />
+  
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
@@ -28,36 +29,32 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="courses.html">Courses</a>
+            <a class="nav-link" href="/courses">Courses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
-          <li><a href="signin.html" class="btn custom-btn">Login</a></li>
+          <li><a href="/login" class="btn custom-btn">Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <main class="container d-flex justify-content-center align-items-center" id="signup-page">
-    <form action="#">
-      <h2>Register</h2>
-      <div class="input-group mt-3">
-        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-        <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Full Name" minlength="3" autofocus required>
-      </div>
-      <div class="input-group mt-3">
+  <main class="container d-flex justify-content-center align-items-center" id="login-page">
+    <form action="/login" method="post" class="">
+      <h2 class="mb-3">Login</h2>
+      <div class="input-group">
         <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
-        <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+        <input type="text" name="email" id="email" class="form-control" placeholder="Email" autofocus required>
       </div>
       <div class="input-group mt-3">
         <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
-        <input type="password" name="password" id="password" class="form-control" placeholder="Password (minimum: 8 char)" minlength="8" required>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Password" minlength="8" required>
       </div>
-      <input type="submit" value="Sign-up" class="btn btn-primary w-100 mt-3">
-      <p class="text-muted">Already have an account? <a href="signin.html">Login</a></p>
+      <input type="submit" value="Login" class="btn btn-primary w-100 mt-3">
+      <p class="text-muted">Don't have an account? <a href="/register">Register</a></p>
     </form>
   </main>
   <footer class="row m-0 py-5">
@@ -67,13 +64,13 @@
 
     <div class="col-md-4">
       <h3>Important Links</h3>
-      <a href="../index.html">
+      <a href="/">
         <p>Home</p>
       </a>
-      <a href="courses.html">
+      <a href="/courses">
         <p>Courses</p>
       </a>
-      <a href="contact.html">
+      <a href="/contact">
         <p>Contact</p>
       </a>
     </div>
