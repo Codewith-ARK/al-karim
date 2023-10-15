@@ -274,6 +274,7 @@ const courseData = [
         "Understanding HTML & Its Tags (.pdf)": "https://drive.google.com/file/d/1iCtGx7clLnM9X12MF1tQHoyckgeNIYod/view?usp=sharing",
         "HTML Tutorial (external link)":"https://www.w3schools.com/html/",
         "HTML Tutorial for Beginners (video)":"https://www.youtube.com/watch?v=HcOc7P5BMi4",
+        "Practice Set 1.2":"https://drive.google.com/file/d/1IWWO6fWAJHG753VrFoTsg0NqFSP5I_Gu/view?usp=sharing",
       },
       "Week 2: Intermediate HTML ": {
         "Semantic HTML & HTML Attributes (.pdf)": "https://drive.google.com/file/d/1PV_ClCVwJ7e7jHbSUkMs-lcDTQlgURSK/view?usp=sharing",

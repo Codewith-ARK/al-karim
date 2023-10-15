@@ -1,2 +1,5 @@
 /links.txt
 /scripts/temp.js
+
+node_modules/
+.env
