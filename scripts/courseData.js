@@ -3,7 +3,7 @@ const courseData = [
     id: "oap",
     title: "Office Automation and Productivity Tools",
     desc: "Boost your office efficiency with this course on office automation and productivity tools. Learn to streamline everyday tasks, manage data effectively, and use popular office software to its fullest potential. Whether you're a professional looking to optimize your workflow or a beginner wanting to gain essential office skills, this course has you covered.",
-    fee: 1200,
+    fee: 1500,
     skills: [
       "Office Automation",
       "Microsoft Word",
@@ -14,9 +14,9 @@ const courseData = [
       "Collaboration and Cloud Storage",
       "Automation and Workflow Optimization",
     ],
-    duration: 8,
+    duration: 16,
     mode: "On-Site",
-    timing: ["Tue", "Thu"],
+    timing: ["Mon", "Tue", "Wed"],
     topics: [
       "Introduction to Office Automation",
       "Mastering Microsoft Word",
@@ -86,7 +86,7 @@ const courseData = [
     id: "cit",
     title: "Certificate Information Technology (CIT)",
     desc: "Dive into the world of Computer Information Technology (CIT) in this comprehensive course. Learn the fundamentals of hardware, software, networking, and cybersecurity. Acquire the skills to troubleshoot computer issues, manage networks, and protect systems from cyber threats.",
-    fee: 2200,
+    fee: 1500,
     skills: [
       "Computer Hardware and Operating Systems",
       "Networking Fundamentals",
@@ -94,9 +94,9 @@ const courseData = [
       "Network Administration",
       "Cybersecurity and Data Protection",
     ],
-    duration: 12,
+    duration: 8,
     mode: "On-Site",
-    timing: ["Thu", "Fri", "Sun"],
+    timing: ["Mon", "Tue", "Wed"],
     topics: [
       "Introduction to CIT",
       "Operating Systems",
@@ -119,7 +119,7 @@ const courseData = [
     id: "dit",
     title: "Diploma in Information Technology (DIT)",
     desc: "Earn a diploma in Information Technology (IT) with this comprehensive program. Cover a wide range of IT topics, from programming and database management to network administration and cybersecurity. Whether you're new to IT or aiming to enhance your skills, this diploma program will prepare you for a rewarding career in the tech industry.",
-    fee: 3500,
+    fee: 1500,
     skills: [
       "IT Fundamentals",
       "Web Development and Design",
@@ -132,7 +132,7 @@ const courseData = [
     ],
     duration: 48,
     mode: "On-Site",
-    timing: ["Thu","Fri", "Sun"],
+    timing: ["Sat", "Sun", "Mon", "Tue", "Wed"],
     topics: ["Windows 10", "Microsoft Office", "Visual Basics Programming", "Internet", "Computer Hardware"],
     syllabus: {
       "Windows 10": {},
@@ -155,7 +155,7 @@ const courseData = [
     id: "seo",
     title: "Search Engine Optimization (SEO)",
     desc: "Explore the art and science of SEO in this comprehensive course. Learn how to optimize websites for search engines, boost organic traffic, and improve search engine rankings. Whether you're new to SEO or want to sharpen your skills, this course will help you master the techniques and strategies.",
-    fee: 1500,
+    fee: 2500,
     skills: [
       "Keyword Research and Analysis",
       "On-Page SEO",
@@ -165,9 +165,9 @@ const courseData = [
       "SEO for Content and E-commerce",
       "SEO Strategy and Future Trends",
     ],
-    duration: 10,
+    duration: 16,
     mode: "On-Site",
-    timing: ["Mon", "Wed", "Fri"],
+    timing: ["Thu", "Fri", "Sun"],
     topics: [
       "Introduction to SEO",
       "Keyword Research and Analysis",
