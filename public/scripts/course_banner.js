@@ -11,6 +11,6 @@ function renderCourseBanner() {
   }
 
   const BG = document.getElementById("course-detail-header"); // get the header div
-  BG.style.backgroundImage = `url("../${matchingCourse.bgImg}")`;
+  BG.style.backgroundImage = `url("/${matchingCourse.bgImg}")`;
   BG.style.backgroundColor = `${matchingCourse.color}`;
 }

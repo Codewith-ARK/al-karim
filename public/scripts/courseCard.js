@@ -10,7 +10,7 @@ function createCourseCard(courseInfo, cardInfo) {
 const truncatedText = courseInfo.desc.length > 95 ? courseInfo.desc.substring(0, 95 - 3) + "..." : courseInfo.desc;
 
   let html = `
-  <a href="course_details/course-detail.html?id=${courseInfo.id}">
+  <a href="pages/course_details/course-detail.html?id=${courseInfo.id}">
     <div class="card overflow-hidden">
     <div class="card-img w-100" style="background-image: url('${cardInfo.icon}'); background-color: ${cardInfo.color}"></div>
     <div class="card-body">

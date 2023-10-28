@@ -1,5 +1,37 @@
 /links.txt
 /scripts/temp.js
 
+# Ignore Node.js files and folders
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Ignore runtime data
+pids*.pid
+*.pid.lock
+
+# Ignore diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Ignore coverage data
+coverage/.nyc_output
+
+# Ignore build artifacts
+build/
+
+# Ignore test data
+test/
+*.test.js
+
+# Ignore development environment files
 .env
+.env.development
+.env.test
+.env.production
+
+# Ignore IDE configuration files
+.vscode/
+.idea/
