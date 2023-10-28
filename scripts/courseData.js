@@ -264,7 +264,7 @@ const courseData = [
       "Recap and Next Steps",
     ],
     syllabus: {
-      "Module 0: Understanding the Basics": {
+      "Week 0: Understanding the Basics": {
         "Introduction to the Internet & HTML (.pdf)": "https://drive.google.com/file/d/1DFOcdiJDcwZkqqEQN7bfKdZWNqAcQEd3/view?usp=sharing",
         "How does the Internet Work? (video)":"https://www.youtube.com/watch?v=7_LPdttKXPc",
         "How websites work? (video)":"https://www.youtube.com/watch?v=2rsI05vBsD4&ab_channel=DigitalGarage",
@@ -285,12 +285,31 @@ const courseData = [
       "Week 3: Hosting": {
         "What is Hosting? (video)":"https://www.youtube.com/watch?v=htbY9-yggB0",
       },
-      "Week 4: CSS": {
-        "CSS Tutorial (external link)":"https://www.w3schools.com/css/",
-        "List of all CSS tags (external link)":"https://www.w3schools.com/cssref/index.php",
+      "Week 4: CSS - The basics of CSS": {
+        "CSS Crash Course - Sheriyans Coding School [hindi] (video)":"https://youtu.be/K1naz9wBwKU",
+        "CSS Masterclass - Tutorial & Course for Beginners [english] (video)":"https://youtu.be/FqmB-Zj2-PA",
+        // "CSS Tutorials (external link)":"https://www.w3schools.com/css/",
+        // "List of all CSS tags (external link)":"https://www.w3schools.com/cssref/index.php",
         "Practice Set 2.1 (.pdf)":"https://drive.google.com/file/d/1ygig3w1zQpA1LXOT5pcaSjcL7RFSWpbz/view?usp=sharing",
         "Practice Set 2.1 (boilerplate html code)":"https://drive.google.com/file/d/1fxu8-1u3tXvqxMp3Zmpa21ZDKasAhpAr/view?usp=sharing",
       },
+      "Week 5: CSS - The Box Model, Margin, Padding & Border":{
+        "CSS Box Model - Code with Harry [hindi] (video)":"https://youtu.be/Xrxd6cEajhM?si=WjkrceU13SlyY6bU",
+      },
+      "Week 6: CSS - The Flex Box":{
+        "CSS Flexbox Tutorial - Code with Harry [hindi] (video)":"https://youtu.be/5qVuORLniwM?si=faZu6095yidX9q7f",
+        "Flexbox Cheatsheet - CSS Tricks":"https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+
+      },
+      "Week 7: CSS - The CSS Grid":{
+        "CSS Grid Tutorial - Code with Harry [hindi] (video)":"https://youtu.be/BNmxUzPRYdw?si=myC6g5ZvZ1oSYMqu",
+        "CSS Grid Tutorial - WebDev Simplified [english] (video)":"https://youtu.be/9zBsdzdE4sM",
+      },
+      "Week 8: CSS - Responsive CSS":{
+        "Responsive Web Development: Building Websites for All Devices! [hindi] (video)":"https://youtu.be/HG10yrq1pbk?si=BMJAtiTh1WGKoX0S",
+        "CSS Media Queries - Code with Harry [hindi] (video)":"https://youtu.be/eHye3PxH4jU?si=O_uCz89KQ-nGX6SZ"
+      },
+
     },
     imgUrl: "https://placehold.co/240x190",
     detailPage: "",
