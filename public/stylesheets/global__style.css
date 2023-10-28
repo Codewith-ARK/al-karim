@@ -145,6 +145,10 @@ footer a {
   background-position: right;
 }
 
+.custom-section {
+  height: 550px;
+}
+
 /* Add this CSS rule in your stylesheet or in a <style> tag in your HTML */
 @media (max-width: 480px) {
   #hero h1 {

@@ -21,6 +21,14 @@ router.get("/course_detail", (req, res)=>{
   res.sendFile(path.join(__dirname, "public", "pages","course_details", "course-detail.html"));
 });
 
+router.get("/success", (req, res)=>{
+  res.sendFile(path.join(__dirname, "public", "pages","success.html"));
+});
+
+router.get("/404", (req, res)=>{
+  res.sendFile(path.join(__dirname, "public", "pages", "404.html"));
+});
+
 // Secondary Routes (login/register/dashboard)
 router.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "pages", "login.html"));
@@ -54,7 +62,7 @@ router.post("/register", (req, res) => {
   // create a new user document from the user response 
   utility.createUser(newUserData);
   // redirect the user to login page
-  res.status(200).redirect("/login");
+  res.status(200).redirect("/success");
 });
 
 router.get("/dashboard", (req, res)=>{
@@ -63,7 +71,7 @@ router.get("/dashboard", (req, res)=>{
 
 // Utility routes
 router.get("/error", (req, res)=>{
-  res.send("ERROR! Email or Password incorrect!");
+  res.sendFile(path.join(__dirname, "public", "pages", "error.html"))
 });
 
 module.exports = router;
