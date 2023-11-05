@@ -284,6 +284,7 @@ const courseData = [
       },
       "Week 3: Hosting": {
         "What is Hosting? (video)":"https://www.youtube.com/watch?v=htbY9-yggB0",
+        "Practice Set 1.3 - Project 1 (.pdf)":"https://codewith-ark.github.io/Practice-Set-1.3/",
       },
       "Week 4: CSS - The basics of CSS": {
         "CSS Crash Course - Sheriyans Coding School [hindi] (video)":"https://youtu.be/K1naz9wBwKU",
