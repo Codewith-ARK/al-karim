@@ -145,6 +145,10 @@ footer a {
   background-position: right;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 10px black;
+}
+
 .custom-section {
   height: 550px;
 }
