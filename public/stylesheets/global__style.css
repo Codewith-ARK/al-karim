@@ -82,7 +82,9 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-#all-courses a, .course-card, .course-card:hover {
+#all-courses a,
+.course-card,
+.course-card:hover {
   text-decoration: none;
   color: unset;
 }
@@ -150,7 +152,11 @@ footer a {
 }
 
 .custom-section {
-  height: 550px;
+  min-height: 550px;
+}
+
+.custom-boxes {
+  height: 250px;
 }
 
 /* Add this CSS rule in your stylesheet or in a <style> tag in your HTML */
@@ -163,6 +169,9 @@ footer a {
   }
   .card-img {
     height: 250px;
+  }
+  .custom-section {
+    min-height: 320px;
   }
   #course-detail-header {
     background-size: 200%;

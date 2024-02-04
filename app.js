@@ -17,10 +17,13 @@ app.use("/pages", express.static("public/pages"));
 app.use(require("./routes.js"));
 
 // START
+
+// mongoose.connect(process.env.MONGODB_URI_OLD).catch(error=> handleError(error));
+
 try {
   mongoose.connect(process.env.MONGODB_URI_OLD);
 } catch (error) {
-  console.log(error);
+  console.log(error.message);
 }
 
 // END
