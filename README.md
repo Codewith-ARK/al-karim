@@ -2,7 +2,7 @@
 
 Source code for Al-Karim Institute of Freelancing's Website.
 
-![Logo](public\assets\brand-logo-(dark).svg)
+![Logo](public/assets/brand-logo-(dark).svg)
 
 ## Authors
 
@@ -17,11 +17,11 @@ Source code for Al-Karim Institute of Freelancing's Website.
 
 ## Screenshots
 
-![homepage](screenshots\home.png)
-![courses](screenshots\courses.png)
-![contact](screenshots\contact.png)
-![login](screenshots\login.png)
-![register](screenshots\register.png)
+![homepage](screenshots/home.png)
+![courses](screenshots/courses.png)
+![contact](screenshots/contact.png)
+![login](screenshots/login.png)
+![register](screenshots/register.png)
 
 ## Run Locally
 
