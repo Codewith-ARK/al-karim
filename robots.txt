@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /private/
 Allow: /
-Host: https://al-karim.vercel.app/
+Host: https://al-karim.cyclic.app/
