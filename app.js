@@ -21,7 +21,7 @@ app.use(require("./routes.js"));
 // mongoose.connect(process.env.MONGODB_URI_OLD).catch(error=> handleError(error));
 
 try {
-  mongoose.connect(process.env.MONGODB_URI_OLD);
+  mongoose.connect(process.env.MONGODB_URI);
 } catch (error) {
   console.log(error.message);
 }
