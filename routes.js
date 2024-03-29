@@ -52,17 +52,21 @@ router.get("/register", (req, res)=>{
   res.sendFile(path.join(__dirname, "public", "pages", "register.html"))
 });
 
-router.post("/register", (req, res) => {
+router.post("/register", async (req, res) => {
   // parse data from the user response
   const newUserData = {
     email: req.sanitize(req.body.email),
     password: req.sanitize(req.body.password),
     full_name: req.sanitize(req.body.fullName),
   };
-  // create a new user document from the user response 
-  utility.createUser(newUserData);
-  // redirect the user to login page
-  res.status(200).redirect("/success");
+  try {
+    // create a new user document from the user response 
+    await utility.createUser(newUserData);
+    // redirect the user to login page
+    res.status(200).redirect("/success");
+  } catch(err){
+    console.error("Error creating user:",err.message)
+  }
 });
 
 router.get("/dashboard", (req, res)=>{
